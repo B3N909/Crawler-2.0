@@ -57,6 +57,7 @@ public class WindowTab
 		//TODO: Group together data
 		
 		isActive = true;
+		internalFrame.setTitle(" \"" + query + "\" ");
 		Thread connectionThread = new Thread()
 		{
 			public void run()

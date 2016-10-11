@@ -5,7 +5,6 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-import java.awt.Insets;
 import java.awt.SystemColor;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
@@ -13,8 +12,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import java.beans.PropertyVetoException;
 import java.util.ArrayList;
 
@@ -31,10 +28,13 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JSlider;
+import javax.swing.JSplitPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.JTree;
 import javax.swing.KeyStroke;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.TitledBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -43,9 +43,8 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 
 import me.savant.search.WindowTab;
-import javax.swing.JSeparator;
-import javax.swing.SwingConstants;
-import javax.swing.JSplitPane;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
 
 public class Program
 {
@@ -68,6 +67,17 @@ public class Program
 
 	private void initialize()
 	{
+		/** LOOKS **/
+        try {
+//			UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName()); //Multi Platform
+	        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); //Windows
+		}
+        catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e1)
+        {
+			e1.printStackTrace();
+		}
+		
+		
 		/** MENU **/
 		frmCrawler = new JFrame();
 		frmCrawler.setTitle("Crawler 2.0");
@@ -146,7 +156,7 @@ public class Program
 		/** OPTIONS WINDOW **/
 		JInternalFrame options = new JInternalFrame("Options");
 		options.setFrameIcon(new ImageIcon(Program.class.getResource("/com/sun/java/swing/plaf/windows/icons/Question.gif")));
-		options.setBounds(708, 302, 257, 245);
+		options.setBounds(868, 451, 257, 245);
 		freeformPanel.add(options);
 		
 		JPanel panel_1 = new JPanel();
@@ -166,7 +176,7 @@ public class Program
 		panel_1.add(updateContent);
 		
 		JLabel lblContentLoadAmount = new JLabel("Content Load Amount");
-		lblContentLoadAmount.setBounds(6, 56, 219, 14);
+		lblContentLoadAmount.setBounds(16, 57, 219, 14);
 		panel_1.add(lblContentLoadAmount);
 		
 		
@@ -192,6 +202,15 @@ public class Program
 		});
 		
 		panel_1.add(slider);
+		
+		JComboBox styleBox = new JComboBox();
+		styleBox.setModel(new DefaultComboBoxModel(new String[] {"Generic", "System"}));
+		styleBox.setBounds(6, 133, 229, 23);
+		panel_1.add(styleBox);
+		
+		JLabel lblStyle = new JLabel("Style");
+		lblStyle.setBounds(16, 116, 46, 14);
+		panel_1.add(lblStyle);
 		options.setVisible(true);
 		
 		/** WINDOWS **/
