@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/cssparser-0.9.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/htmlunit-2.22.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/htmlunit-core-js-2.22.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/jetty-io-9.2.17.v20160517.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/jetty-util-9.2.17.v20160517.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/neko-htmlunit-2.21.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/RXTXcomm.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/serializer-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/websocket-api-9.2.17.v20160517.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/websocket-client-9.2.17.v20160517.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/websocket-common-9.2.17.v20160517.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/xalan-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ben/workspace5/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="miglayout15-swing.jar" sourcepath="miglayout-src.zip"/>
+	<classpathentry kind="lib" path="jgoodies-common-1.8.0.jar" sourcepath="jgoodies-common-1.8.0-sources.jar"/>
+	<classpathentry kind="lib" path="jgoodies-forms-1.8.0.jar" sourcepath="jgoodies-forms-1.8.0-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
